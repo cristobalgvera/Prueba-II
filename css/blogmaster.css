@@ -240,6 +240,10 @@ footer div p {
   justify-content: space-evenly;
 }
 
+#dialog-form-blog ul li a:hover {
+  background: whitesmoke;
+}
+
 /* log out */
 #logout-h1 {
   font-size: 60px;
