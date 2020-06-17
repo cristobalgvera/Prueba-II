@@ -183,7 +183,6 @@ footer div p {
 }
 
 /* Quienes somos */
-<<<<<<< HEAD
 .aboutus-main {
   text-align: center;
 }
@@ -193,10 +192,7 @@ footer div p {
 }
 
 .aboutus-main p {
-=======
-.main {
   text-align: center;
-
 }
 
 .main h1 {
@@ -204,7 +200,6 @@ footer div p {
 }
 
 .main p {
->>>>>>> aad56fba899b9faa74e2f8d2a5fc23658aa5238b
   margin: 0 auto;
   width: 50%;
 }
@@ -217,9 +212,6 @@ footer div p {
 .team1 p {
   margin: 0 auto;
   width: 30%;
-<<<<<<< HEAD
-=======
-
 }
 
 .team1 img {
@@ -228,7 +220,6 @@ footer div p {
   border-radius: 20px;
   width: 150px;
   height: 150px;
-
 }
 
 .blog-menu-highlight {
@@ -246,7 +237,10 @@ footer div p {
   flex-flow: column;
   padding: 2.1%;
   justify-content: space-evenly;
->>>>>>> aad56fba899b9faa74e2f8d2a5fc23658aa5238b
+}
+
+#dialog-form-blog ul li a:hover {
+  background: whitesmoke;
 }
 
 .team1 img {
@@ -302,12 +296,5 @@ footer div p {
   .team1 p {
     margin: 0 auto;
     width: 60%;
-<<<<<<< HEAD
   }
 }
-=======
-
-
-  }
-}
->>>>>>> aad56fba899b9faa74e2f8d2a5fc23658aa5238b
