@@ -1,5 +1,6 @@
 * {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
@@ -127,21 +128,104 @@ footer div p {
   display: none !important;
 }
 
+footer {
+  display: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* blog */
+#blog-main {
+  margin-top: 5%;
+  display: flex;
+  margin-left: 1%;
+  margin-right: 1%;
+  justify-content: space-around;
+}
+
+#blog-content {
+  padding: 2%;
+  display: flex;
+  flex-flow: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+#blog-h1 {
+  margin-top: 0;
+  text-align: left;
+  width: 100%;
+  font-size: 50px;
+
+}
+
+#blog-p {
+  text-align: justify;
+  width: 100%;
+}
+
+#blog-image {
+  margin-top: 8%;
+  padding: 2%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  width: 100%;
+}
+
+#blog-image img {
+  max-width: 100%;
+  max-height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+
+#blog-image-responsive {
+  width: 100%;
+  display: none;
+}
+
+/* responsive */
 @media screen and (max-width: 900px) {
   .shown {
     display: none !important;
   }
+
   .hidden {
     display: flex !important;
   }
+
   .grouper {
     display: flex;
     margin: 7% 0;
   }
+
   .grouper div img {
     width: 130px !important;
     height: 130px !important;
     border-radius: 50%;
     margin: 0 20px;
   }
+
+  #blog-content {
+    width: 80%;
+    display: flex;
+    margin-top: 40px;
+  }
+
+  #blog-image {
+    display: none;
+  }
+
+  #blog-image-responsive {
+    display: flex;
+    box-sizing: border-box;
+  }
+
+  #blog-p a img {
+    margin-top: 7%;
+    width: 100%;
+  } 
 }

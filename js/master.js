@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(document).ready(function () {
   var navigation = $('#nav-main').okayNav()
   var dialog = $("#dialog-form").dialog({
     autoOpen: false,
@@ -20,12 +20,41 @@ $(document).ready(function() {
     draggable: false,
     resizable: false,
   });
+  var dialogblog = $("#dialog-form-blog").dialog({
+    autoOpen: false,
+    height: 170,
+    width: 260,
+    show: {
+      effect: "fold",
+      duration: 200
+    },
+    hide: {
+      effect: "fold",
+      duration: 250
+    },
+    position: {
+      my: "right top",
+      at: "right bottom",
+      of: header
+    },
+    draggable: false,
+    resizable: false,
+  });
+  $("#blog").on('click', function () {
+    dialogblog.dialog("open")
+  })
+
   $(".ui-dialog-titlebar").hide();
-  $("main").click(function() {
-    dialog.dialog("close")
+  $("body").click(function (e) {
+    if ((e.target.id) != "blog") { 
+      dialogblog.dialog("close")
+    } 
+    if ((e.target.id) != "login") { 
+      dialog.dialog("close")
+    } 
     $(".user").prop('value', '')
   })
-  $(".user").on("input", function() {
+  $(".user").on("input", function () {
     $(this).css('border-bottom', '1px solid rgba(0,0,0,0.3)');
   })
   $("#login").on('click', function validation() {
@@ -36,7 +65,7 @@ $(document).ready(function() {
       dialog.dialog("open")
     }
   })
-  $("#log").on('keypress', function(e) {
+  $("#log").on('keypress', function (e) {
     if (e.which == 13) {
       loginAttempt()
     }
@@ -66,7 +95,6 @@ function login() {
   $("#login").prop('innerHTML', 'Logout')
   isLogged = true
 }
-
 function validation() {
   if ($("#user").prop("value") == "user" && $("#pass").prop("value") == "pass") {
     return true
