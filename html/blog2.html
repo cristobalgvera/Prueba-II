@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es-cl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="../css/okayNav.min.css" media="screen">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="../css/jquery-ui.min.css">
+  <link rel="stylesheet" href="../css/blogmaster.css">
+  <title>Blog - La Grange</title>
+</head>
+
+
+<body>
+  <div id="blog2-page" class="page-indicator"></div>
+  <header style="z-index: 100" id="header">
+    <a class="site-logo" href="#">
+      Prueba 2
+    </a>
+
+    <nav role="navigation" id="nav-main" class="okayNav">
+      <ul>
+        <li><a id="index" href="index.html">Inicio</a></li>
+        <li><a id="aboutus" href="./html/quienesomos.html">Quiénes somos</a></li>
+        <li><a id="blog" href="#">Blog</a></li>
+        <li><a id="login" href="#">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div id="dialog-form-blog" title="blog">
+    <ul>
+      <li><a id="blog1" href="./html/blog1.html">Zabardast</a></li>
+      <li><a id="blog2" href="./html/blog2.html">La Grange</a></li>
+      <li><a id="blog3" href="./html/blog3.html">Dark: Resumen</a></li>
+      <li><a id="blog4" href="./html/blog4.html">Nixie Watch</a></li>
+      <li><a id="blog5" href="./html/blog5.html">Pokemon</a></li>
+    </ul>
+  </div>
+
+  <div id="dialog-form" title="Login">
+    <form id="log">
+      <!-- <h4>Login</h4> -->
+      <input id="user" type="text" class="user" minlength="2" maxlength="20" name="username"
+        placeholder="Nombre de usuario">
+      <input id="pass" type="password" class="user" style="margin-top: 10px" name="password" placeholder="Contraseña">
+      <input id="log-btn" type="button" class="ui-button ui-widget ui-corner-all btn-submit" name="submit"
+        value="Ingresar">
+    </form>
+  </div>
+
+  <div id=blog-main>
+    <section id="blog-content">
+      <div>
+        <h1 id="blog-h1">La Grange</h1>
+        <p id="blog-p">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum neque iste corrupti quo soluta quos veniam
+          ducimus aut iure illo repellendus, ipsa qui facere laborum totam eum. Consequuntur, quasi? Lorem ipsum, dolor
+          sit amet consectetur adipisicing elit. Cumque perferendis quia vero sed eum, ipsa sint in accusantium animi
+          cupiditate sunt nesciunt ea nam, magni eveniet totam consectetur fugit itaque?Lorem ipsum, dolor sit amet
+          consectetur adipisicing elit. Ipsa in commodi similique culpa doloribus iusto dolorum ipsum illo delectus,
+          aspernatur modi? Necessitatibus corporis aperiam, ducimus illum laboriosam corrupti delectus ea?Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Temporibus, doloremque incidunt iste, eaque nam maiores soluta
+          asperiores hic quas, ut eligendi quidem earum veritatis quis ratione. Neque debitis veritatis nisi.loremLorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum neque iste corrupti quo soluta quos veniam ducimus aut iure illo repellendus, ipsa qui facere laborum totam eum. Consequuntur, quasi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis quia vero sed eum, ipsa sint in accusantium animi cupiditate sunt nesciunt ea nam, magni eveniet totam consectetur fugit itaque?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa in commodi similique culpa doloribus iusto dolorum ipsum illo delectus, aspernatur modi? Necessitatibus corporis aperiam, ducimus illum laboriosam corrupti delectus ea?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, doloremque incidunt iste, eaque nam maiores soluta asperiores hic quas, ut eligendi quidem earum veritatis quis ratione. Neque debitis veritatis nisi.loremLorem ipsum dolor sit amet consectetur adipisicing elit. A dolorum neque iste corrupti quo soluta quos veniam ducimus aut iure illo repellendus, ipsa qui facere laborum totam eum. Consequuntur, quasi? Lorem ipsum, dolor sit amet consectetur adipisicing elit. Cumque perferendis quia vero sed eum, ipsa sint in accusantium animi cupiditate sunt nesciunt ea nam, magni eveniet totam consectetur fugit itaque?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsa in commodi similique culpa doloribus iusto dolorum ipsum illo delectus, aspernatur modi? Necessitatibus corporis aperiam, ducimus illum laboriosam corrupti delectus ea?Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus, doloremque incidunt iste, eaque nam maiores soluta asperiores hic quas, ut eligendi quidem earum veritatis quis ratione. Neque debitis veritatis nisi.lorem
+
+          <a data-fancybox id="blog-image-responsive" href="https://www.youtube.com/watch?v=Al3tRlzOREg">
+            <img src="../img/img2.jpg" alt="">
+          </a>
+
+
+        </p>
+      </div>
+    </section>
+
+    <section id="blog-image" class="move">
+      <a data-fancybox href="https://www.youtube.com/watch?v=Al3tRlzOREg"> <img src="../img/img2.jpg" alt="">
+      </a>
+    </section>
+  </div>
+
+  <footer>
+    <div>
+      <p>
+        © Don't copy us 2020
+      </p>
+      <p>
+        En serio, no lo hagas
+      </p>
+    </div>
+    <div>
+      <p>
+        Algunos textos interesantes
+      </p>
+    </div>
+    <div>
+      <p>
+        Más textos interesantes
+      </p>
+    </div>
+  </footer>
+</body>
+
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js"></script>
+<script src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/additional-methods.min.js"></script>
+<script src="../js/jquery.okayNav-min.js"></script>
+<script src="../js/master.js" charset="utf-8"></script>
+
+</html>
