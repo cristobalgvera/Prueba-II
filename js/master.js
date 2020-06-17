@@ -1,12 +1,23 @@
 $(document).ready(function() {
   $('#nav-main').okayNav()
   var pageIndicator = $(".page-indicator").attr("id").split("-")[0]
+  var pageId = simplify(pageIndicator)
   var navigationMenu = $("#nav-main ul li a")
   navigationMenu.each(function(index, el) {
-    if (pageIndicator == $(el).attr("id")) {
+    // alert(pageIndicator + "   " + $(el).attr("id"))
+    if (pageId == $(el).attr("id")) {
       with($(el)) {
         css("background-color", "whitesmoke")
         css("border-radius", "30% 0px 30% 0px")
+      }
+      return false
+    }
+  });
+  var blogMenu = $("#dialog-form-blog ul li a")
+  blogMenu.each(function(index, el) {
+    if (pageIndicator == $(el).attr("id")) {
+      with($(el)) {
+        addClass('blog-menu-highlight')
       }
       return false
     }
@@ -120,16 +131,14 @@ function validation() {
 
 function simplify(pageIndicator) {
   let words = pageIndicator.split("")
-  let simple
   try {
-    alert(typeof(eval(hola)))
-    simple = true
+    if (typeof(eval(words[words.length - 1])) == "number") {
+      words.pop()
+      // alert(words)
+      return words.join("")
+    }
   } catch (e) {
     return pageIndicator
-  }
-  if (simple) {
-    words.pop()
-    return words.join("")
   }
 }
 
