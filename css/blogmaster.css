@@ -183,6 +183,7 @@ footer div p {
 }
 
 /* Quienes somos */
+<<<<<<< HEAD
 .aboutus-main {
   text-align: center;
 }
@@ -192,6 +193,18 @@ footer div p {
 }
 
 .aboutus-main p {
+=======
+.main {
+  text-align: center;
+
+}
+
+.main h1 {
+  font-size: 30px;
+}
+
+.main p {
+>>>>>>> aad56fba899b9faa74e2f8d2a5fc23658aa5238b
   margin: 0 auto;
   width: 50%;
 }
@@ -204,6 +217,36 @@ footer div p {
 .team1 p {
   margin: 0 auto;
   width: 30%;
+<<<<<<< HEAD
+=======
+
+}
+
+.team1 img {
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+
+}
+
+.blog-menu-highlight {
+  background: whitesmoke;
+  font-weight: bold;
+}
+
+#dialog-form-blog ul li {
+  text-align: center;
+}
+
+#dialog-form-blog ul li a {
+  font-size: 14px;
+  display: flex;
+  flex-flow: column;
+  padding: 2.1%;
+  justify-content: space-evenly;
+>>>>>>> aad56fba899b9faa74e2f8d2a5fc23658aa5238b
 }
 
 .team1 img {
@@ -259,5 +302,12 @@ footer div p {
   .team1 p {
     margin: 0 auto;
     width: 60%;
+<<<<<<< HEAD
   }
 }
+=======
+
+
+  }
+}
+>>>>>>> aad56fba899b9faa74e2f8d2a5fc23658aa5238b
