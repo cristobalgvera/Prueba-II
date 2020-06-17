@@ -1,5 +1,19 @@
-$(document).ready(function () {
-  var navigation = $('#nav-main').okayNav()
+$(document).ready(function() {
+  $('#nav-main').okayNav()
+  var pageIndicator = $(".page-indicator").attr("id").split("-")[0]
+  var navigationMenu = $("#nav-main ul li a")
+  navigationMenu.each(function(index, el) {
+    if (pageIndicator == $(el).attr("id")) {
+      with($(el)) {
+        css("background-color", "whitesmoke")
+        css("border-radius", "30% 0px 30% 0px")
+      }
+      return false
+    }
+  });
+  // setTimeout(function () {
+  //   alert("hola")
+  // }, 5000)
   var dialog = $("#dialog-form").dialog({
     autoOpen: false,
     height: 170,
@@ -40,21 +54,21 @@ $(document).ready(function () {
     draggable: false,
     resizable: false,
   });
-  $("#blog").on('click', function () {
+  $("#blog").on('click', function() {
     dialogblog.dialog("open")
   })
 
   $(".ui-dialog-titlebar").hide();
-  $("body").click(function (e) {
-    if ((e.target.id) != "blog") { 
+  $("body").click(function(e) {
+    if ((e.target.id) != "blog") {
       dialogblog.dialog("close")
-    } 
-    if ((e.target.id) != "login") { 
+    }
+    if ((e.target.id) != "login") {
       dialog.dialog("close")
-    } 
+    }
     $(".user").prop('value', '')
   })
-  $(".user").on("input", function () {
+  $(".user").on("input", function() {
     $(this).css('border-bottom', '1px solid rgba(0,0,0,0.3)');
   })
   $("#login").on('click', function validation() {
@@ -65,7 +79,7 @@ $(document).ready(function () {
       dialog.dialog("open")
     }
   })
-  $("#log").on('keypress', function (e) {
+  $("#log").on('keypress', function(e) {
     if (e.which == 13) {
       loginAttempt()
     }
@@ -95,11 +109,27 @@ function login() {
   $("#login").prop('innerHTML', 'Logout')
   isLogged = true
 }
+
 function validation() {
   if ($("#user").prop("value") == "user" && $("#pass").prop("value") == "pass") {
     return true
   } else {
     return false
+  }
+}
+
+function simplify(pageIndicator) {
+  let words = pageIndicator.split("")
+  let simple
+  try {
+    alert(typeof(eval(hola)))
+    simple = true
+  } catch (e) {
+    return pageIndicator
+  }
+  if (simple) {
+    words.pop()
+    return words.join("")
   }
 }
 

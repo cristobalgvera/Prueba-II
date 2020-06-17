@@ -14,6 +14,8 @@
 </head>
 
 <body>
+
+  <div id="index-page" class="page-indicator"></div>
   <header style="z-index: 100" id="header">
     <a class="site-logo" href="#">
       Prueba 2
@@ -21,13 +23,22 @@
 
     <nav role="navigation" id="nav-main" class="okayNav">
       <ul>
-        <li><a href="#">Inicio</a></li>
-        <li><a href="#">Quiénes somos</a></li>
-        <li><a href="#">Blog</a></li>
+        <li><a id="index" href="#">Inicio</a></li>
+        <li><a id="aboutus" href="#">Quiénes somos</a></li>
+        <li><a id="blog" href="#">Blog</a></li>
         <li><a id="login" href="#">Login</a></li>
       </ul>
     </nav>
   </header>
+
+  <div id="dialog-form-blog" title="blog">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Quiénes somos</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Login</a></li>
+    </ul>
+  </div>
 
   <div id="dialog-form" title="Login">
     <form id="log">
