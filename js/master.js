@@ -84,7 +84,6 @@ $(document).ready(function() {
     if (isLogged) {
       logout()
       if (pageId == "index") {
-        alert("si")
         $(location).attr('href', "./html/logout.html");
       } else {
         $(location).attr('href', "logout.html");
