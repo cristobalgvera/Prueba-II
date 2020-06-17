@@ -153,7 +153,6 @@ footer div p {
   text-align: left;
   width: 100%;
   font-size: 50px;
-
 }
 
 #blog-p {
@@ -184,36 +183,36 @@ footer div p {
 }
 
 /* Quienes somos */
-.main{
-    text-align: center;
-    
-  }
-  .main h1{
-    font-size: 30px;
-  }
-  .main p{
+.aboutus-main {
+  text-align: center;
+}
+
+.aboutus-main h1 {
+  font-size: 30px;
+}
+
+.aboutus-main p {
   margin: 0 auto;
   width: 50%;
-  }
-  .team1{
-    padding: 20px;
-    box-sizing: border-box;
-  }
-  .team1 p{
-   margin: 0 auto;
-  width: 30%;
-  
-  }
-  .team1 img{
-    display: block;
-    margin: auto;
-    border-radius: 20px;
-    width: 150px;
-    height: 150px;
-    
-  }
-  
+}
 
+.team1 {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.team1 p {
+  margin: 0 auto;
+  width: 30%;
+}
+
+.team1 img {
+  display: block;
+  margin: auto;
+  border-radius: 20px;
+  width: 150px;
+  height: 150px;
+}
 
 /* responsive */
 @media screen and (max-width: 900px) {
@@ -255,11 +254,10 @@ footer div p {
   #blog-p a img {
     margin-top: 7%;
     width: 100%;
-  } 
-  .team1 p{
+  }
+
+  .team1 p {
     margin: 0 auto;
-   width: 60%;
- 
-   
-   }
+    width: 60%;
+  }
 }
