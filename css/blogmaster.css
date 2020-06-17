@@ -184,7 +184,6 @@ footer div p {
 }
 
 /* Quienes somos */
-<<<<<<< HEAD
 .aboutus-main {
   text-align: center;
 }
@@ -194,9 +193,6 @@ footer div p {
 }
 
 .aboutus-main p {
-=======
-.main {
->>>>>>> f1a0a5938d17b89d0898e4c39e3252206e625a8f
   text-align: center;
 }
 
@@ -217,10 +213,6 @@ footer div p {
 .team1 p {
   margin: 0 auto;
   width: 30%;
-<<<<<<< HEAD
-=======
-
->>>>>>> f1a0a5938d17b89d0898e4c39e3252206e625a8f
 }
 
 .team1 img {
@@ -246,13 +238,6 @@ footer div p {
   flex-flow: column;
   padding: 2.1%;
   justify-content: space-evenly;
-<<<<<<< HEAD
-}
-
-#dialog-form-blog ul li a:hover {
-  background: whitesmoke;
-=======
->>>>>>> f1a0a5938d17b89d0898e4c39e3252206e625a8f
 }
 
 /* log out */
@@ -347,10 +332,6 @@ center {
   .team1 p {
     margin: 0 auto;
     width: 60%;
-<<<<<<< HEAD
-  }
-}
-=======
   }
 
   /* log out */
@@ -364,7 +345,7 @@ center {
     margin-bottom: 2%;
     margin-top: -20px;
   }
-  
+
   #logout-h5 {
     font-size: 20px;
     margin-bottom: 2%;
@@ -406,4 +387,3 @@ center {
     color: gray;
     }
 }
->>>>>>> f1a0a5938d17b89d0898e4c39e3252206e625a8f
