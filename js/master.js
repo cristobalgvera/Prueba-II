@@ -22,9 +22,6 @@ $(document).ready(function() {
       return false
     }
   });
-  // setTimeout(function () {
-  //   alert("hola")
-  // }, 5000)
   var dialog = $("#dialog-form").dialog({
     autoOpen: false,
     height: 170,
@@ -71,10 +68,10 @@ $(document).ready(function() {
 
   $(".ui-dialog-titlebar").hide();
   $("body").click(function(e) {
-    if ((e.target.id) != "blog") {
+    if ((e.target.id) != "blog" && (e.target.id) != "dialog-form-blog") {
       dialogblog.dialog("close")
     }
-    if ((e.target.id) != "login") {
+    if ((e.target.id) != "login" && (e.target.id) != "dialog-form" && (e.target.id) != "user" && (e.target.id) != "pass" && (e.target.id) != "log" && (e.target.id) != "log-btn") {
       dialog.dialog("close")
     }
     $(".user").prop('value', '')
@@ -85,7 +82,7 @@ $(document).ready(function() {
   $("#login").on('click', function validation() {
     if (isLogged) {
       logout()
-      location.reload()
+      // $(location).attr('href', "../html/logout");
     } else {
       dialog.dialog("open")
     }
@@ -129,6 +126,11 @@ function validation() {
   }
 }
 
+function incorrectLogin() {
+  alert("Login incorrecto")
+  $(".user").css('border-bottom', '1px solid red');
+}
+
 function simplify(pageIndicator) {
   let words = pageIndicator.split("")
   try {
@@ -140,9 +142,4 @@ function simplify(pageIndicator) {
   } catch (e) {
     return pageIndicator
   }
-}
-
-function incorrectLogin() {
-  alert("Login incorrecto")
-  $(".user").css('border-bottom', '1px solid red');
 }
