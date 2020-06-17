@@ -71,7 +71,8 @@ $(document).ready(function() {
     if ((e.target.id) != "blog" && (e.target.id) != "dialog-form-blog") {
       dialogblog.dialog("close")
     }
-    if ((e.target.id) != "login" && (e.target.id) != "dialog-form" && (e.target.id) != "user" && (e.target.id) != "pass" && (e.target.id) != "log" && (e.target.id) != "log-btn") {
+    if ((e.target.id) != "login" && (e.target.id) != "dialog-form" && (e.target.id) != "user" &&
+        (e.target.id) != "pass" && (e.target.id) != "log" && (e.target.id) != "log-btn") {
       dialog.dialog("close")
     }
     $(".user").prop('value', '')
@@ -82,7 +83,12 @@ $(document).ready(function() {
   $("#login").on('click', function validation() {
     if (isLogged) {
       logout()
-      // $(location).attr('href', "../html/logout");
+      if (pageId == "index") {
+        alert("si")
+        $(location).attr('href', "./html/logout.html");
+      } else {
+        $(location).attr('href', "logout.html");
+      }
     } else {
       dialog.dialog("open")
     }
